@@ -39,12 +39,14 @@ int main() {
         for (int k = 0; k < pattern.length(); k++) {
             char bit = pattern[k];
             int cal = 2 * k + 1;
-            if (isPrime(cal)==1) {
-                std::cout << k << " : " << cal << " -> ";
-                std::cout << cal << " is true" << std::endl;
-            }else if(isPrime(cal)==0){
-                std::cout<<k<<" : "<<cal<<" -> ";
-                std::cout<<cal<< " is false" << std::endl;
+            if(bit == '1'){
+                if (isPrime(cal)==1) {
+                    std::cout << k << " : " << cal << " -> ";
+                    std::cout << cal << " is true" << std::endl;
+                }else if(isPrime(cal)==0){
+                    std::cout<<k<<" : "<<cal<<" -> ";
+                    std::cout<<cal<< " is false" << std::endl;
+                }
             }
         }
         std::cout << std::endl;
