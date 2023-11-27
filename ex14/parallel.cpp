@@ -114,6 +114,7 @@ int main(int argc, char** argv) {
   std::cout << "Result: " << result << " / Elapsed time (ms): " 
             << std::chrono::duration_cast<std::chrono::milliseconds>(stop - start).count() 
             << std::endl;
+}
     
   /*
   // show v1
